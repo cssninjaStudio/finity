@@ -1,0 +1,162 @@
+{
+    ".mx-auto": {
+        "sym": ".",
+        "origin": "mx-auto",
+        "obfused": "obscure-4B6zkvPEj"
+    },
+    ".mb-5": {
+        "sym": ".",
+        "origin": "mb-5",
+        "obfused": "obscure-JkxnVdorJ"
+    },
+    ".mt-4": {
+        "sym": ".",
+        "origin": "mt-4",
+        "obfused": "obscure-38m1Qy3Mq"
+    },
+    ".block": {
+        "sym": ".",
+        "origin": "block",
+        "obfused": "obscure-P7b3RjAkA"
+    },
+    ".flex": {
+        "sym": ".",
+        "origin": "flex",
+        "obfused": "obscure-x0jZbqWgx"
+    },
+    ".grid": {
+        "sym": ".",
+        "origin": "grid",
+        "obfused": "obscure-LzpyBjArx"
+    },
+    ".min-h-screen": {
+        "sym": ".",
+        "origin": "min-h-screen",
+        "obfused": "obscure-p7QnbwBAZ"
+    },
+    ".w-full": {
+        "sym": ".",
+        "origin": "w-full",
+        "obfused": "obscure-wgzwvqnAx"
+    },
+    ".max-w-": {
+        "sym": ".",
+        "origin": "max-w-",
+        "obfused": "obscure-ZWk0oGAZ6"
+    },
+    ".max-w-3xl": {
+        "sym": ".",
+        "origin": "max-w-3xl",
+        "obfused": "obscure-VX5b6yAxV"
+    },
+    ".items-center": {
+        "sym": ".",
+        "origin": "items-center",
+        "obfused": "obscure-8zXkQMwGP"
+    },
+    ".justify-center": {
+        "sym": ".",
+        "origin": "justify-center",
+        "obfused": "obscure-BEkVJL9rG"
+    },
+    ".gap-4": {
+        "sym": ".",
+        "origin": "gap-4",
+        "obfused": "obscure-4B6zkvPEG"
+    },
+    ".rounded-lg": {
+        "sym": ".",
+        "origin": "rounded-lg",
+        "obfused": "obscure-KELM8dr0V"
+    },
+    ".border": {
+        "sym": ".",
+        "origin": "border",
+        "obfused": "obscure-l0Q9bPwAb"
+    },
+    ".border-muted-200": {
+        "sym": ".",
+        "origin": "border-muted-200",
+        "obfused": "obscure-Rzk69EArn"
+    },
+    ".bg-white": {
+        "sym": ".",
+        "origin": "bg-white",
+        "obfused": "obscure-5erBQKxGo"
+    },
+    ".bg-muted-100": {
+        "sym": ".",
+        "origin": "bg-muted-100",
+        "obfused": "obscure-9avkQ9ZGy"
+    },
+    ".px-6": {
+        "sym": ".",
+        "origin": "px-6",
+        "obfused": "obscure-n0QWbLVvA"
+    },
+    ".py-10": {
+        "sym": ".",
+        "origin": "py-10",
+        "obfused": "obscure-Wb5z1mALd"
+    },
+    ".text-center": {
+        "sym": ".",
+        "origin": "text-center",
+        "obfused": "obscure-av0pGWQRX"
+    },
+    ".font-heading": {
+        "sym": ".",
+        "origin": "font-heading",
+        "obfused": "obscure-69n1QKL7e"
+    },
+    ".font-sans": {
+        "sym": ".",
+        "origin": "font-sans",
+        "obfused": "obscure-1wyZQvrEe"
+    },
+    ".text-4xl": {
+        "sym": ".",
+        "origin": "text-4xl",
+        "obfused": "obscure-X8MyXmAQG"
+    },
+    ".text-lg": {
+        "sym": ".",
+        "origin": "text-lg",
+        "obfused": "obscure-N7Z1KjAQ1"
+    },
+    ".font-bold": {
+        "sym": ".",
+        "origin": "font-bold",
+        "obfused": "obscure-okQ0bp8g9"
+    },
+    ".font-semibold": {
+        "sym": ".",
+        "origin": "font-semibold",
+        "obfused": "obscure-r3QkbVKJ3"
+    },
+    ".leading-tight": {
+        "sym": ".",
+        "origin": "leading-tight",
+        "obfused": "obscure-0w6eQvoM4"
+    },
+    ".text-muted-900": {
+        "sym": ".",
+        "origin": "text-muted-900",
+        "obfused": "obscure-qJQRbZegp"
+    },
+    ".text-muted-600": {
+        "sym": ".",
+        "origin": "text-muted-600",
+        "obfused": "obscure-jzqBQJLg1"
+    },
+    ".text-muted-400": {
+        "sym": ".",
+        "origin": "text-muted-400",
+        "obfused": "obscure-AdEVQx5jE"
+    },
+    ".dark": {
+        "sym": ".",
+        "origin": "dark",
+        "obfused": "obscure-7XnkQKpbl"
+    }
+}

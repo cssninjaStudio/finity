@@ -1,0 +1,59 @@
+<!--Start Layout-->
+{{#> minimal }}
+
+<!--Navbar-->
+{{> demo/demo-navbar}}
+
+<!--Hero-->
+{{> demo/demo-hero}}
+
+<section class="w-full py-12 px-4 bg-white dark:bg-muted-900">
+  <div class="w-full max-w-7xl mx-auto">
+    <!--Layout-->
+    <div
+      class="
+        w-full
+        flex flex-col
+        ltablet:flex-row
+        lg:flex-row
+        gap-0
+        ltablet:gap-10
+        lg:gap-28
+      "
+    >
+      <!--Column-->
+      <div class="w-full ltablet:w-8/12 lg:w-8/12">
+        <!--Techs-->
+        {{> demo/demo-techs}}
+
+        <!--Features-->
+        {{> demo/demo-features}}
+
+        <!--Template demos-->
+        {{> demo/demo-screenshots}}
+
+        <!--FAQ-->
+        {{> demo/demo-faq}}
+      </div>
+      <!--Column-->
+      <div class="w-full ltablet:w-4/12 lg:w-4/12">
+        <div class="h-full pt-10">
+          <!--Purchase card-->
+          {{> demo/demo-purchase}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Call to action-->
+{{> demo/demo-cta}}
+
+<!--Demo footer-->
+{{> demo/demo-footer}}
+
+<!--Back to top button-->
+{{> misc/backtotop}}
+
+<!--End Layout-->
+{{/minimal}}

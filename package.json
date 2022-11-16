@@ -1,0 +1,87 @@
+{
+  "name": "apollo",
+  "version": "0.0.0",
+  "license": "See LICENCE.md",
+  "private": "true",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "mangle": "obscure ./dist/**/*.css --apply ./dist/**/*.html --output ./",
+    "preview": "vite preview",
+    "test": "run-p test:*",
+    "test:lint": "run-s lint:eslint lint:stylelint lint:prettier",
+    "lint": "run-s lint:eslint:fix lint:stylelint:fix lint:prettier:fix",
+    "lint:prettier": "prettier --check \"./src/**/*.(js|css|pcss|postcss|html)\"",
+    "lint:prettier:fix": "prettier --write \"./src/**/*.(js|css|pcss|postcss|html)\"",
+    "lint:eslint": "eslint --ext .js ./src",
+    "lint:eslint:fix": "eslint --fix --ext .js ./src",
+    "lint:stylelint": "stylelint ./src/**/*.{css,pcss,postcss}",
+    "lint:stylelint:fix": "stylelint ./src/**/*.{css,pcss,postcss} --fix"
+  },
+  "dependencies": {
+    "@alpinejs/collapse": "3.10.4",
+    "@alpinejs/intersect": "3.10.4",
+    "@alpinejs/persist": "3.10.4",
+    "@iconify/iconify": "2.0.2",
+    "@ryangjchandler/alpine-tooltip": "1.2.0",
+    "@vidstack/player": "1.6.3",
+    "alpinejs": "3.10.4",
+    "apexcharts": "3.35.5",
+    "lit": "2.3.1",
+    "numerable": "^0.3.15",
+    "prism-theme-vars": "0.2.2",
+    "prismjs": "1.23.0",
+    "swiper": "8.3.2"
+  },
+  "devDependencies": {
+    "@iconify/json": "2.1.102",
+    "@tailwindcss/aspect-ratio": "0.4.0",
+    "@tailwindcss/forms": "0.5.1",
+    "@tailwindcss/line-clamp": "0.4.0",
+    "@tailwindcss/typography": "0.5.2",
+    "autoprefixer": "10.4.0",
+    "chalk": "4.1.1",
+    "cssnano": "5.0.14",
+    "eslint": "8.23.0",
+    "eslint-config-prettier": "8.3.0",
+    "fast-glob": "3.2.5",
+    "lint-staged": "11.0.0",
+    "npm-run-all": "4.1.5",
+    "postcss": "8.4.5",
+    "postcss-class-name-shortener": "2.0.0",
+    "prettier": "2.3.1",
+    "stylelint": "14.11.0",
+    "stylelint-config-prettier": "9.0.3",
+    "stylelint-config-standard": "28.0.0",
+    "tailwindcss": "3.2.2",
+    "vite": "3.0.7",
+    "vite-plugin-handlebars": "1.6.0",
+    "vite-plugin-purge-icons": "0.9.0",
+    "yorkie": "2.0.0"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged",
+    "commit-msg": "node scripts/verifyCommit.js"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.css": [
+      "stylelint",
+      "prettier --write"
+    ],
+    "*.pcss": [
+      "stylelint",
+      "prettier --write"
+    ],
+    "*.postcss": [
+      "stylelint",
+      "prettier --write"
+    ],
+    "*.html": [
+      "prettier --write"
+    ]
+  }
+}
