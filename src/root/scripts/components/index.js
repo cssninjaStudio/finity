@@ -11,6 +11,7 @@ import { dropFilter } from './dropfilter'
 import { gallery } from './gallery'
 import { tabs } from './tabs'
 import { wizard } from './wizard'
+import { swiperHero } from './swiper'
 
 window.layout = layout
 window.navbar = navbar
@@ -25,3 +26,4 @@ window.dropdown = dropdown
 window.dropFilter = dropFilter
 window.tabs = tabs
 window.wizard = wizard
+window.swiperHero = swiperHero

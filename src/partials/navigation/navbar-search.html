@@ -1,0 +1,138 @@
+<div
+  x-data="search()"
+  x-cloak
+  class="
+    fixed
+    w-screen
+    ease-in-out
+    flex flex-col
+    lg:flex-row lg:items-center
+    flex-shrink-0
+    px-5
+    bg-white
+    dark:bg-muted-800
+    border-b border-muted-200
+    dark:border-muted-700
+    transition-all
+    duration-300
+    z-[90]
+  "
+  :class="$store.app.searchOpened ? 'translate-y-0' : '-translate-y-full'"
+>
+  <div class="w-full max-w-7xl mx-auto flex items-center justify-between py-3">
+    <!--Logo-->
+    <a
+      href="/home.html"
+      class="
+        flex
+        title-font
+        font-medium
+        items-center
+        text-muted-900
+        dark:text-muted-100
+      "
+    >
+      <img
+        class="h-11"
+        src="/img/logo/logo-square.svg"
+        alt="Mistral logo"
+        width="48"
+        height="48"
+      />
+      <span class="font-heading font-bold text-2xl ml-3">Mistral</span>
+    </a>
+    <!--Search-->
+    <div class="w-full max-w-xl mx-auto py-3">
+      <div class="group relative w-full rounded-md shadow-sm">
+        <input
+          id="navbar-search-field"
+          x-model="searchTerms"
+          class="
+            w-full
+            h-10
+            bg-muted-100
+            dark:bg-muted-800
+            rounded-lg
+            border border-muted-200
+            dark:border-muted-700
+            focus:bg-white
+            dark:focus:bg-muted-900
+            focus:shadow-xl focus:shadow-muted-400/10
+            dark:focus:shadow-muted-800/10
+            placeholder:text-muted-300
+            dark:placeholder:text-muted-500
+            text-base text-muted-600
+            dark:text-muted-200
+            pl-10
+            pr-4
+            py-2
+            transition-all
+            duration-300
+            tw-accessibility
+          "
+          placeholder="Search for anything..."
+          type="text"
+        />
+        <button
+          type="button"
+          class="
+            absolute
+            top-0
+            left-0
+            h-10
+            w-10
+            flex
+            justify-center
+            items-center
+            text-muted-400
+            group-focus-within:text-primary-500
+            transition-colors
+            duration-300
+            cursor-pointer
+          "
+        >
+          <i class="iconify w-4 h-4" data-icon="lucide:search"></i>
+        </button>
+        <!--Empty button-->
+        <button
+          class="
+            absolute
+            top-0
+            right-0
+            h-10
+            w-10
+            flex
+            justify-center
+            items-center
+            text-muted-400
+            hover:text-muted-700
+            dark:hover:text-muted-100
+            transition-colors
+            duration-300
+            cursor-pointer
+          "
+          :class="searchTerms === '' ? 'hidden' : 'block'"
+          @click="searchTerms = ''"
+        >
+          <i class="iconify w-4 h-4" data-icon="lucide:x"></i>
+        </button>
+      </div>
+    </div>
+    <!--Dismiss-->
+    <div>
+      <button
+        type="button"
+        class="
+          font-sans font-semibold
+          text-sm text-muted-400
+          hover:text-primary-500
+          transition-colors
+          duration-300
+        "
+        @click="toggleSearch()"
+      >
+        Close search
+      </button>
+    </div>
+  </div>
+</div>

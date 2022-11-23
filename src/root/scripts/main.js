@@ -14,6 +14,7 @@ import Tooltip from '@ryangjchandler/alpine-tooltip'
 
 import './demo'
 import './components'
+import { insertBgImages } from './utils/bg'
 
 window.Alpine = Alpine
 //Init intersect plugin
@@ -36,6 +37,7 @@ Alpine.start()
 
 document.onreadystatechange = function () {
   if (document.readyState == 'complete') {
-    // Do something here
+    // Replace bg images
+    insertBgImages()
   }
 }
