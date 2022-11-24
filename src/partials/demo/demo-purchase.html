@@ -12,13 +12,13 @@
     dark:bg-muted-800
     border border-muted-200
     dark:border-muted-700
-    rounded-xl
+    rounded-md
     shadow-xl shadow-muted-400/10
     dark:shadow-muted-800/10
   "
 >
   <div class="w-full">
-    <div class="w-full relative flex rounded-xl bg-muted-100 dark:bg-muted-900">
+    <div class="w-full relative flex rounded-md bg-muted-100 dark:bg-muted-900">
       <a
         class="
           relative
@@ -53,7 +53,7 @@
         data-tab="premium"
         @click.prevent="toggleTabs($event)"
       >
-        Premium
+        Developer
       </a>
       <a
         class="
@@ -79,7 +79,7 @@
           absolute
           h-full
           w-1/3
-          rounded-xl
+          rounded-md
           bg-white
           dark:bg-muted-800
           border border-muted-200
@@ -142,7 +142,7 @@
           </div>
         </div>
 
-        <!--Premium price-->
+        <!--Developer price-->
         <div
           x-show="activeTab === 'premium'"
           class="
@@ -177,7 +177,7 @@
                 dark:text-white
               "
             >
-              Premium license
+              Developer license
             </h4>
             <p class="font-sans text-sm ltablet:text-xs text-muted-400">
               Same as regular with private Github access.
@@ -267,7 +267,7 @@
         <!--Action-->
         <div>
           <a
-            href="https://cssninja.io/product/mistral"
+            href="https://cssninja.io/product/finity"
             class="
               relative
               font-sans font-normal
@@ -279,13 +279,13 @@
               w-full
               space-x-1
               text-white
-              bg-primary-500
+              bg-primary-600
               h-12
               px-5
               py-3
               text-base
-              rounded-xl
-              hover:bg-primary-600 hover:shadow-xl hover:shadow-primary-500/20
+              rounded-md
+              hover:bg-primary-500 hover:shadow-xl hover:shadow-primary-500/20
               tw-accessibility
               transition-all
               duration-300

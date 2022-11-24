@@ -39,30 +39,28 @@
       <a
         href="/"
         class="
+          group
           flex
           title-font
-          font-medium
+          font-light
           items-center
           gap-2
           text-muted-900
           dark:text-muted-100
         "
       >
-        <img
-          src="/img/logo/logo-square-outline.svg"
-          class="w-10 h-10 dark:invert"
-          alt="App logo"
-          width="48"
-          height="48"
-        />
-        <img
-          src="/img/logo/text.svg"
-          class="w-28 dark:invert"
-          :class="$store.app.isLayoutCompact ? 'hidden' : 'block'"
-          alt="App logo"
-          width="112"
-          height="15"
-        />
+        <div
+          class="
+            h-14
+            w-14
+            group-hover:text-primary-500
+            transition-colors
+            duration-300
+          "
+        >
+          {{> vector/logos/logo}}
+        </div>
+        <span class="text-2xl">Finity</span>
       </a>
 
       <!-- Hamburger -->
@@ -144,7 +142,7 @@
       >
         <li>
           <a
-            href="https://cssninja.io/product/apollo"
+            href="https://cssninja.io/product/finity"
             class="
               block
               text-base
@@ -179,7 +177,7 @@
         </li>
         <li>
           <a
-            href="https://docs.cssninja.io/apollo/"
+            href="https://docs.cssninja.io/finity/"
             class="
               block
               text-base
@@ -198,10 +196,10 @@
       <div class="flex flex-col my-3 lg:hidden">
         <div class="mb-4">
           <!--Dark mode-->
-          {{> theme/theme-toggler}}
+          {{> theme/theme-toggler-base}}
         </div>
         <a
-          href="https://docs.cssninja.io/apollo/"
+          href="https://docs.cssninja.io/finity/"
           class="
             relative
             w-full
@@ -234,10 +232,10 @@
     <div class="hidden lg:flex lg:w-1/5 lg:justify-end lg:gap-x-4">
       <div class="h-12 w-12 flex items-center justify-center">
         <!--Dark mode-->
-        {{> theme/theme-toggler}}
+        {{> theme/theme-toggler-base}}
       </div>
       <a
-        href="https://docs.cssninja.io/apollo/"
+        href="https://docs.cssninja.io/finity/"
         class="
           relative
           font-sans font-normal
@@ -248,14 +246,17 @@
           no-underline
           min-w-[130px]
           space-x-1
+          rounded
           text-white
-          bg-primary-500
+          bg-muted-800
+          dark:bg-muted-900
           h-12
           px-5
           py-3
           text-base
-          rounded-xl
-          hover:bg-primary-600 hover:shadow-xl hover:shadow-primary-500/20
+          hover:bg-muted-700
+          dark:hover:bg-muted-1000
+          hover:shadow-xl hover:shadow-muted-300/20 dark:hover:shadow-muted-1000/20
           tw-accessibility
           transition-all
           duration-300
