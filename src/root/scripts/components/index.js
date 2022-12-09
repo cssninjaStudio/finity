@@ -12,6 +12,7 @@ import { gallery } from './gallery'
 import { tabs } from './tabs'
 import { wizard } from './wizard'
 import { swiperHero } from './swiper'
+import { calendar } from './calendar'
 
 window.layout = layout
 window.navbar = navbar
@@ -27,3 +28,4 @@ window.dropFilter = dropFilter
 window.tabs = tabs
 window.wizard = wizard
 window.swiperHero = swiperHero
+window.calendar = calendar

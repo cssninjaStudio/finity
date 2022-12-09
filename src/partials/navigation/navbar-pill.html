@@ -3,8 +3,9 @@
     absolute
     top-4
     inset-x-0
-    w-60
-    rounded-full
+    w-full
+    max-w-xs
+    rounded
     mx-auto
     p-2
     bg-white
@@ -35,7 +36,7 @@
         justify-center
         h-14
         w-14
-        rounded-full
+        rounded
         text-muted-400
         hover:text-primary-500
         border border-muted-200
@@ -51,8 +52,18 @@
     >
       <i class="iconify w-6 h-6" data-icon="ph:house-duotone"></i>
     </a>
-    <!--Site name-->
-    <span class="font-heading font-bold text-2xl">Mistral</span>
+    <!--Site logo-->
+    <div
+      class="
+        h-14
+        w-14
+        group-hover:text-primary-500
+        transition-colors
+        duration-300
+      "
+    >
+      {{> vector/logos/logo}}
+    </div>
     <!--Theme toggler-->
     <div
       class="
@@ -61,12 +72,12 @@
         justify-center
         h-14
         w-14
-        rounded-full
+        rounded
         bg-muted-100
         dark:bg-muted-700
       "
     >
-      {{> theme/theme-toggler}}
+      {{> theme/theme-toggler-base}}
     </div>
   </div>
 </div>

@@ -1,12 +1,11 @@
 {
-  "name": "apollo",
+  "name": "finity",
   "version": "0.0.0",
   "license": "See LICENCE.md",
   "private": "true",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "mangle": "obscure ./dist/**/*.css --apply ./dist/**/*.html --output ./",
     "preview": "vite preview",
     "test": "run-p test:*",
     "test:lint": "run-s lint:eslint lint:stylelint lint:prettier",

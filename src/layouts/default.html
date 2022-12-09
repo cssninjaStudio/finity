@@ -11,7 +11,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/img/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Apollo - Tailwind CSS Banking Dashboard</title>
+    <title>Finity - Tailwind CSS Car retailer template</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,14 +28,10 @@
     <!-- prettier-ignore -->
 
     <!--Site navbar-->
-    {{> navigation/navbar}}
-
-    <!--Site search-->
-    {{> navigation/navbar-search}}
+    {{> navigation/navbar-static}}
 
     <main
-      x-cloak
-      class="relative w-full overflow-hidden transition-all duration-300 z-10"
+      class="relative w-full transition-all duration-300 z-10"
     >
       <!--Container-->
       <div
@@ -52,6 +48,9 @@
         {{> @partial-block }}
       </div>
     </main>
+
+    <!--Footer-->
+    {{> footer/footer}}
 
     <!--Back to top button-->
     {{> misc/backtotop}}

@@ -1,6 +1,6 @@
 export function purchase() {
   return {
-    activeTab: 'regular',
+    activeTab: 'starter',
     toggleTabs(e) {
       const target = e.target.getAttribute('data-tab')
       this.activeTab = target

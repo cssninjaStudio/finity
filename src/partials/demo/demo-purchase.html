@@ -31,11 +31,11 @@
           cursor-pointer
           select-none
         "
-        :class="activeTab === 'regular'? 'text-muted-800 dark:text-muted-100' : 'text-muted-400'"
-        data-tab="regular"
+        :class="activeTab === 'starter'? 'text-muted-800 dark:text-muted-100' : 'text-muted-400'"
+        data-tab="starter"
         @click.prevent="toggleTabs($event)"
       >
-        Regular
+        Starter
       </a>
       <a
         class="
@@ -49,8 +49,8 @@
           cursor-pointer
           select-none
         "
-        :class="activeTab === 'premium'? 'text-muted-800 dark:text-muted-100' : 'text-muted-400'"
-        data-tab="premium"
+        :class="activeTab === 'developer'? 'text-muted-800 dark:text-muted-100' : 'text-muted-400'"
+        data-tab="developer"
         @click.prevent="toggleTabs($event)"
       >
         Developer
@@ -67,11 +67,11 @@
           cursor-pointer
           select-none
         "
-        data-tab="extended"
-        :class="activeTab === 'extended'? 'text-muted-800 dark:text-muted-100' : 'text-muted-400'"
+        data-tab="business"
+        :class="activeTab === 'business'? 'text-muted-800 dark:text-muted-100' : 'text-muted-400'"
         @click.prevent="toggleTabs($event)"
       >
-        Extended
+        Business
       </a>
       <span
         class="
@@ -90,18 +90,18 @@
           duration-300
         "
         :class="[
-                    activeTab === 'regular' && 'ml-0' ,
-                    activeTab === 'premium' && 'ml-[33.3%]' ,
-                    activeTab === 'extended' && 'ml-[66.6%]' 
+                    activeTab === 'starter' && 'ml-0' ,
+                    activeTab === 'developer' && 'ml-[33.3%]' ,
+                    activeTab === 'business' && 'ml-[66.6%]' 
                   ]"
       ></span>
     </div>
 
     <div class="pt-4">
       <div class="inner-content">
-        <!--Regular price-->
+        <!--Starter price-->
         <div
-          x-show="activeTab === 'regular'"
+          x-show="activeTab === 'starter'"
           class="
             w-full
             flex
@@ -134,17 +134,17 @@
                 dark:text-white
               "
             >
-              Regular license
+              Starter license
             </h4>
             <p class="font-sans text-sm ltablet:text-xs text-muted-400">
-              Build a single project for you or one of your customers.
+              Use this template on a single domain / subdomain.
             </p>
           </div>
         </div>
 
         <!--Developer price-->
         <div
-          x-show="activeTab === 'premium'"
+          x-show="activeTab === 'developer'"
           class="
             w-full
             flex
@@ -180,14 +180,14 @@
               Developer license
             </h4>
             <p class="font-sans text-sm ltablet:text-xs text-muted-400">
-              Same as regular with private Github access.
+              Same as starter license with private Github access.
             </p>
           </div>
         </div>
 
-        <!--Extended price-->
+        <!--Business price-->
         <div
-          x-show="activeTab === 'extended'"
+          x-show="activeTab === 'business'"
           class="
             w-full
             flex
@@ -220,28 +220,28 @@
                 dark:text-white
               "
             >
-              Extended license
+              Business license
             </h4>
             <p class="font-sans text-sm ltablet:text-xs text-muted-400">
-              Build up to 10 projects for you or your customers.
+              Use this template on unlimited domains / subdomains.
             </p>
           </div>
         </div>
 
         <!--Benefits-->
         <div class="mb-8">
-          <ul class="list-disc font-sans pl-4">
+          <ul class="list-disc space-y-2 font-sans pl-4">
             <li
-              x-show="activeTab !== 'extended'"
+              x-show="activeTab !== 'business'"
               class="text-sm text-muted-500 dark:text-muted-400"
             >
-              <span>Up to 1 customer project</span>
+              <span>Up to 1 domain / subdomain</span>
             </li>
             <li
-              x-show="activeTab === 'extended'"
+              x-show="activeTab === 'business'"
               class="text-sm text-muted-500 dark:text-muted-400"
             >
-              <span>Up to 10 customer projects</span>
+              <span>Unlimited domains / subdomains</span>
             </li>
             <li
               class="
@@ -250,16 +250,25 @@
                 decoration-inherit
               "
               :class="{
-                        'line-through opacity-75 pointer-events-none cursor-not-allowed': activeTab === 'regular'
-                      }"
+                'line-through opacity-75 pointer-events-none cursor-not-allowed': activeTab === 'starter'
+              }"
             >
-              <span>Access to private repo</span>
+              <span>Access to Github repository</span>
             </li>
             <li class="text-sm text-muted-500 dark:text-muted-400">
               <span>Lifetime updates</span>
             </li>
-            <li class="text-sm text-muted-500 dark:text-muted-400">
-              <span>Support answers under 48h</span>
+            <li
+              x-show="activeTab !== 'starter'"
+              class="text-sm text-muted-500 dark:text-muted-400"
+            >
+              <span>6 months included support</span>
+            </li>
+            <li
+              x-show="activeTab === 'starter'"
+              class="text-sm text-muted-500 dark:text-muted-400"
+            >
+              <span>Community support</span>
             </li>
           </ul>
         </div>

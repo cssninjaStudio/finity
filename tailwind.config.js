@@ -170,6 +170,11 @@ module.exports = {
           '50%': { 'background-size': '100% auto' },
           '100%': { 'background-size': '120% auto' },
         },
+        stripemove: {
+          to: {
+            transform: 'rotateX(45deg) translate(0) skew(-60deg)',
+          },
+        },
       },
       animation: {
         indeterminate: 'indeterminate 1s cubic-bezier(0.4, 0, 0.2, 1) infinite',
@@ -179,6 +184,8 @@ module.exports = {
         scale: 'scale 0.5s linear 0.5s forwards',
         kenburns: 'kenburns 12s linear infinite reverse',
         wheel: 'spin 3s linear infinite',
+        rotation: 'spin 1.5s infinite linear reverse',
+        stripemove: 'stripemove 0.5s linear infinite',
       },
     },
   },
@@ -226,6 +233,11 @@ module.exports = {
         '.mask-diamond': {
           'mask-image':
             "url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTAwIDBsMTAwIDEwMC0xMDAgMTAwTDAgMTAweiIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+')",
+        },
+        '.transform-road': {
+          transform: 'rotateX(45deg) translate(-20vw) skew(-60deg)',
+          background:
+            'repeating-linear-gradient( to right, var(--color-muted-400), var(--color-muted-400) 8vw, transparent 8vw, transparent 20vw )',
         },
       })
     }),

@@ -1,13 +1,12 @@
 <nav
   class="
     fixed
-    w-screen
+    w-full
     z-50
     transition-all
     duration-300
     ease-in-out
     flex flex-col flex-shrink-0
-    
     divide-y
   "
   x-data="navbar()"
@@ -36,8 +35,21 @@
       "
     >
       <div class="flex justify-between items-center w-full lg:w-1/5">
-        <a href="/home.html" class="group flex font-sans font-light items-center gap-4 text-white">
-          <div class="h-14 w-14 group-hover:text-primary-500 transition-colors duration-300">{{> vector/logos/logo}}</div>
+        <a
+          href="/home.html"
+          class="group flex font-sans font-light items-center gap-4 text-white"
+        >
+          <div
+            class="
+              h-14
+              w-14
+              group-hover:text-primary-500
+              transition-colors
+              duration-300
+            "
+          >
+            {{> vector/logos/logo}}
+          </div>
           <span class="text-2xl">Finity</span>
         </a>
 
@@ -163,7 +175,7 @@
             </button>
 
             <!--Megamenu-->
-            {{> navigation/megamenu-large}}
+            {{> navigation/megamenu-cars}}
           </li>
           <li
             class="relative"
@@ -207,11 +219,11 @@
               ></i>
             </button>
             <!--Megamenu-->
-            {{> navigation/megamenu-slim}}
+            {{> navigation/megamenu-brands}}
           </li>
           <li x-on:mouseover="megamenuOpened = false, openedMegamenu = ''">
             <a
-              href="/"
+              href="/inventory.html"
               class="
                 block
                 text-base
@@ -223,12 +235,12 @@
                 tw-accessibility
               "
             >
-              Hybrid
+              Inventory
             </a>
           </li>
           <li x-on:mouseover="megamenuOpened = false, openedMegamenu = ''">
             <a
-              href="/"
+              href="/dashboard.html"
               class="
                 block
                 text-base
@@ -240,7 +252,7 @@
                 tw-accessibility
               "
             >
-              Custom
+              Account
             </a>
           </li>
         </ul>
@@ -279,7 +291,12 @@
         </div>
       </div>
 
-      <div class="hidden lg:flex lg:items-center lg:w-1/5 lg:justify-end lg:gap-x-2">
+      <div
+        class="
+          hidden
+          lg:flex lg:items-center lg:w-1/5 lg:justify-end lg:gap-x-2
+        "
+      >
         <button
           type="button"
           class="
@@ -292,7 +309,6 @@
             justify-center
             tw-accessibility
           "
-          @click="openSearch()"
         >
           <div
             class="
@@ -316,7 +332,7 @@
           {{> theme/theme-toggler}}
         </div>
         <a
-          href="/"
+          href="/dashboard-bookmarks.html"
           class="
             relative
             font-sans font-normal
@@ -342,7 +358,7 @@
           <i class="iconify w-4 h-4" data-icon="lucide:heart"></i>
         </a>
         <a
-          href="/"
+          href="/dashboard.html"
           class="
             relative
             font-sans font-normal
@@ -388,9 +404,10 @@
     >
       <div>
         <a
-          href="/"
+          href="/inventory.html"
           class="
-            block flex-1
+            block
+            flex-1
             text-sm
             font-sans font-light
             text-white
@@ -405,9 +422,10 @@
       </div>
       <div>
         <a
-          href="/"
+          href="/inventory.html"
           class="
-            block flex-1
+            block
+            flex-1
             text-sm
             font-sans font-light
             text-white
@@ -423,9 +441,10 @@
       </div>
       <div>
         <a
-          href="/"
+          href="/services.html"
           class="
-            block flex-1
+            block
+            flex-1
             text-sm
             font-sans font-light
             text-white
@@ -436,50 +455,15 @@
             tw-accessibility
           "
         >
-          Service
-        </a>
-      </div>
-      <div>
-        <a
-          href="/"
-          class="
-            block flex-1
-            text-sm
-            font-sans font-light
-            text-white
-            hover:text-primary-500
-            py-2
-            md:mx-2
-            whitespace-nowrap
-            tw-accessibility
-          "
-        >
-          Assistance
+          Services
         </a>
       </div>
       <div class="md:ml-auto">
         <a
-          href="/"
+          href="/about.html"
           class="
-            block flex-1
-            text-sm
-            font-sans font-light
-            text-white
-            hover:text-primary-500
-            py-2
-            md:mx-2
-            whitespace-nowrap
-            tw-accessibility
-          "
-        >
-          Accessories
-        </a>
-      </div>
-      <div>
-        <a
-          href="/"
-          class="
-            block flex-1
+            block
+            flex-1
             text-sm
             font-sans font-light
             text-white
@@ -495,9 +479,10 @@
       </div>
       <div>
         <a
-          href="/"
+          href="/contact.html"
           class="
-            block flex-1
+            block
+            flex-1
             text-sm
             font-sans font-light
             text-white
@@ -508,7 +493,7 @@
             tw-accessibility
           "
         >
-          Network
+          Contact
         </a>
       </div>
     </div>

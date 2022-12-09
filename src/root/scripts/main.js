@@ -14,6 +14,7 @@ import Tooltip from '@ryangjchandler/alpine-tooltip'
 
 import './demo'
 import './components'
+import './pages'
 import { insertBgImages } from './utils/bg'
 
 window.Alpine = Alpine
@@ -31,6 +32,9 @@ Alpine.store('app', {
     this.on = window.matchMedia('(prefers-color-scheme: dark)').matches
   },
   isDark: Alpine.$persist(false),
+  activeApp: Alpine.$persist('dashboard'),
+  isSidebarActive: false,
+  isSidebarMobileActive: false,
 })
 //Start Alpine
 Alpine.start()
