@@ -162,11 +162,11 @@ module.exports = {
           '100%': { 'stroke-dashoffset': '0' },
         },
         scale: {
-          0: { transform: 'scale(0)', opacity: 0 },
+          '0%': { transform: 'scale(0)', opacity: 0 },
           '100%': { transform: 'scale(1)', opacity: 1 },
         },
         kenburns: {
-          0: { 'background-size': '120% auto' },
+          '0%': { 'background-size': '120% auto' },
           '50%': { 'background-size': '100% auto' },
           '100%': { 'background-size': '120% auto' },
         },
@@ -194,9 +194,8 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/typography'),
-    require('@tailwindcss/line-clamp'),
     require('@tailwindcss/aspect-ratio'),
-    require('@vidstack/player/tailwind.cjs'),
+    require('vidstack/tailwind.cjs'),
     plugin(function ({ addUtilities }) {
       addUtilities({
         '.slimscroll::-webkit-scrollbar': {
