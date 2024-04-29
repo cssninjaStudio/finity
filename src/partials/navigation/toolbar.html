@@ -28,10 +28,7 @@
       :class="$store.app.isSidebarActive ? 'hidden' : 'hidden lg:flex'"
       @click="$store.app.isSidebarActive = true"
     >
-      <i
-        class="iconify w-5 h-5 text-muted-600 dark:text-muted-200"
-        data-icon="lucide:menu"
-      ></i>
+      <iconify-icon class="iconify w-5 h-5 text-muted-600 dark:text-muted-200" icon="lucide:menu"></iconify-icon>
     </button>
     <!--Mobile button-->
     <button
@@ -50,10 +47,7 @@
       "
       @click="$store.app.isSidebarMobileActive = true"
     >
-      <i
-        class="iconify w-5 h-5 text-muted-600 dark:text-muted-200"
-        data-icon="lucide:menu"
-      ></i>
+      <iconify-icon class="iconify w-5 h-5 text-muted-600 dark:text-muted-200" icon="lucide:menu"></iconify-icon>
     </button>
     <!--Logged account-->
     <img class="h-10 w-10 rounded-full" src="/img/avatars/25.jpg" alt="" />

@@ -161,11 +161,12 @@
               ]"
             >
               <span>Vehicles</span>
-              <i
+              <iconify-icon
                 class="
                   iconify
                   w-5
                   h-5
+                  flex items-center justify-center
                   group-hover:text-primary-500
                   transition-transform
                   duration-300
@@ -174,8 +175,8 @@
                   openedMegamenu === 'megamenu-1' && megamenuOpened ? 'rotate-180' : '',
                   scrolled || megamenuOpened || mobileOpen ? 'text-white' : 'text-muted-800 dark:text-white'
                 ]"
-                data-icon="lucide:chevron-down"
-              ></i>
+                icon="lucide:chevron-down"
+              ></iconify-icon>
             </button>
 
             <!--Megamenu-->
@@ -206,11 +207,12 @@
               ]"
             >
               <span>Brands</span>
-              <i
+              <iconify-icon
                 class="
                   iconify
                   w-5
                   h-5
+                  flex items-center justify-center
                   group-hover:text-primary-500
                   transition-transform
                   duration-300
@@ -219,8 +221,8 @@
                   openedMegamenu === 'megamenu-2' && megamenuOpened ? 'rotate-180' : '',
                   scrolled || megamenuOpened || mobileOpen ? 'text-white' : 'text-muted-800 dark:text-white'
                 ]"
-                data-icon="lucide:chevron-down"
-              ></i>
+                icon="lucide:chevron-down"
+              ></iconify-icon>
             </button>
             <!--Megamenu-->
             {{> navigation/megamenu-brands}}
@@ -335,7 +337,7 @@
               scrolled || megamenuOpened || mobileOpen ? 'text-white' : 'text-muted-800 dark:text-white'
             ]"
           >
-            <i class="iconify w-4 h-4" data-icon="lucide:search"></i>
+            <iconify-icon class="iconify w-4 h-4" icon="lucide:search"></iconify-icon>
           </div>
         </button>
         <div class="h-10 w-10 flex items-center justify-center">
@@ -366,7 +368,7 @@
             duration-300
           "
         >
-          <i class="iconify w-4 h-4" data-icon="lucide:heart"></i>
+          <iconify-icon class="iconify w-4 h-4" icon="lucide:heart"></iconify-icon>
         </a>
         <a
           href="/dashboard.html"
@@ -392,7 +394,7 @@
             duration-300
           "
         >
-          <i class="iconify w-4 h-4" data-icon="lucide:user"></i>
+          <iconify-icon class="iconify w-4 h-4" icon="lucide:user"></iconify-icon>
         </a>
       </div>
     </div>

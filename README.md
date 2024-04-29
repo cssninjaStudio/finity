@@ -1,5 +1,5 @@
 # 👋 Finity
-> Finity is a Banking Dashboard UI template built by [cssninjaStudio](https://cssninja.io).
+> Finity is a car retailer UI template built by [cssninjaStudio](https://cssninja.io).
 
 [![cssninja-discord](https://img.shields.io/discord/785473098069311510?label=join%20us%20on%20discord&color=6944EC)](https://go.cssninja.io/discord)
 
@@ -10,9 +10,7 @@ Finity is built with [Tailwind CSS](https://tailwindcss.com/) and [Alpine JS](ht
 
 ## 👍 Features
 
-- Gulp 4 and Node.js 16/18+
 * Tailwind v3.x
-* ES6 support
 * Alpine v3.x
 * RTL support
 

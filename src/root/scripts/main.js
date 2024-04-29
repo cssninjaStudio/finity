@@ -1,6 +1,9 @@
-import '@purge-icons/generated'
-import 'vidstack/define/media-player.js';
 import 'swiper/css/bundle'
+import 'vidstack/icons'
+import 'vidstack/define/media-player.js'
+import 'vidstack/define/media-poster.js'
+import 'vidstack/define/media-play-button.js'
+import 'vidstack/define/media-icon.js'
 
 //Alpine and plugins import
 import Alpine from 'alpinejs'
@@ -8,6 +11,7 @@ import intersect from '@alpinejs/intersect'
 import collapse from '@alpinejs/collapse'
 import persist from '@alpinejs/persist'
 import Tooltip from '@ryangjchandler/alpine-tooltip'
+import 'iconify-icon'
 
 import './demo'
 import './components'

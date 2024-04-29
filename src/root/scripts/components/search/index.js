@@ -19,7 +19,7 @@ function searchJSON(searchTerm, url) {
               let template = `
                   <a href="${value.url}" class="search-result group flex items-center gap-2 p-2 rounded-lg hover:bg-muted-50 dark:hover:bg-muted-800">
                       <div class="w-10 h-10 flex items-center justify-center mask mask-blob bg-transparent group-hover:bg-primary-100 dark:group-hover:bg-primary-500/20 text-primary-500 transition-colors duration-300">
-                        <i class="iconify w-5 h-5 block" data-icon="${value.icon}"></i>
+                        <iconify-icon class="iconify w-5 h-5 block" icon="${value.icon}"></iconify-icon>
                       </div>
                       <div class="meta font-sans leading-tight">
                           <h4 class="text-sm text-muted-600 dark:text-muted-100">${value.title}</h4 >
@@ -36,7 +36,7 @@ function searchJSON(searchTerm, url) {
             let placeholder = `
                 <div class="w-full p-6">
                     <div class="text-center">
-                        <i class="iconify w-8 h-8 mx-auto text-muted-400" data-icon="ph:robot-duotone"></i>
+                        <iconify-icon class="iconify w-8 h-8 mx-auto text-muted-400" icon="ph:robot-duotone"></iconify-icon>
                         <h3 class="font-heading font-medium text-muted-800 dark:text-muted-100">No Matching Results</h3>
                         <p class="font-heading text-xs max-w-[240px] mx-auto text-muted-400">Sorry, we couldn't find any matching records. Please try different search terms.</p>
                     </div>

@@ -62,10 +62,7 @@
       "
       @click="$store.app.isSidebarActive = false"
     >
-      <i
-        class="iconify w-5 h-5 text-muted-600 dark:text-muted-200"
-        data-icon="lucide:arrow-left"
-      ></i>
+      <iconify-icon class="iconify w-5 h-5 flex items-center justify-center text-xl text-muted-600 dark:text-muted-200" icon="lucide:arrow-left"></iconify-icon>
     </button>
     <!--Mobile button-->
     <button
@@ -85,10 +82,7 @@
       "
       @click="$store.app.isSidebarMobileActive = false"
     >
-      <i
-        class="iconify w-5 h-5 text-muted-600 dark:text-muted-200"
-        data-icon="lucide:arrow-left"
-      ></i>
+      <iconify-icon class="iconify w-5 h-5 flex items-center justify-center text-xl text-muted-600 dark:text-muted-200" icon="lucide:arrow-left"></iconify-icon>
     </button>
   </div>
   <div class="w-full h-[calc(100%_-_80px)] flex flex-col py-6 px-4">
@@ -100,11 +94,11 @@
           :class="$store.app.activeApp === 'dashboard' ? 'text-muted-800 dark:text-muted-100 bg-muted-100 dark:bg-muted-800' : 'text-muted-500 dark:text-muted-400/80 hover:bg-muted-50 dark:hover:bg-muted-800/50'"
           @click="$store.app.activeApp = 'dashboard', $store.isSidebarMobileActive = false"
         >
-          <i
-            class="iconify w-5 h-5"
+          <iconify-icon
+            class="iconify w-5 h-5 flex items-center justify-center text-xl"
             :class="$store.app.activeApp === 'dashboard' ? 'text-primary-500' : 'text-muted-500'"
-            data-icon="ph:grid-four-duotone"
-          ></i>
+            icon="ph:grid-four-duotone"
+          ></iconify-icon>
           <span class="font-sans">Dashboard</span>
         </a>
       </li>
@@ -115,11 +109,11 @@
           :class="$store.app.activeApp === 'account' ? 'text-muted-800 dark:text-muted-100 bg-muted-100 dark:bg-muted-800' : 'text-muted-500 dark:text-muted-400/80 hover:bg-muted-50 dark:hover:bg-muted-800/50'"
           @click="$store.app.activeApp = 'account', $store.isSidebarMobileActive = false"
         >
-          <i
-            class="iconify w-5 h-5"
+          <iconify-icon
+            class="iconify w-5 h-5 flex items-center justify-center text-xl"
             :class="$store.app.activeApp === 'account' ? 'text-primary-500' : 'text-muted-500'"
-            data-icon="ph:user-duotone"
-          ></i>
+            icon="ph:user-duotone"
+          ></iconify-icon>
           <span class="font-sans text-muted-800 dark:text-muted-500">
             Account
           </span>
@@ -132,11 +126,11 @@
           :class="$store.app.activeApp === 'schedule' ? 'text-muted-800 dark:text-muted-100 bg-muted-100 dark:bg-muted-800' : 'text-muted-500 dark:text-muted-400/80 hover:bg-muted-50 dark:hover:bg-muted-800/50'"
           @click="$store.app.activeApp = 'schedule', $store.isSidebarMobileActive = false"
         >
-          <i
-            class="iconify w-5 h-5"
+          <iconify-icon
+            class="iconify w-5 h-5 flex items-center justify-center text-xl"
             :class="$store.app.activeApp === 'schedule' ? 'text-primary-500' : 'text-muted-500'"
-            data-icon="ph:circles-four-duotone"
-          ></i>
+            icon="ph:circles-four-duotone"
+          ></iconify-icon>
           <span class="font-sans text-muted-800 dark:text-muted-500">
             Schedule
           </span>
@@ -149,11 +143,11 @@
           :class="$store.app.activeApp === 'bookmarks' ? 'text-muted-800 dark:text-muted-100 bg-muted-100 dark:bg-muted-800' : 'text-muted-500 dark:text-muted-400/80 hover:bg-muted-50 dark:hover:bg-muted-800/50'"
           @click="$store.app.activeApp = 'bookmarks', $store.isSidebarMobileActive = false"
         >
-          <i
-            class="iconify w-5 h-5"
+          <iconify-icon
+            class="iconify w-5 h-5 flex items-center justify-center text-xl"
             :class="$store.app.activeApp === 'bookmarks' ? 'text-primary-500' : 'text-muted-500'"
-            data-icon="ph:car-duotone"
-          ></i>
+            icon="ph:car-duotone"
+          ></iconify-icon>
           <span class="font-sans text-muted-800 dark:text-muted-500">
             Favorites
           </span>
@@ -177,10 +171,7 @@
               duration-300
             "
           >
-            <i
-              class="iconify w-5 h-5 text-muted-500"
-              data-icon="ph:sign-out-duotone"
-            ></i>
+            <iconify-icon class="iconify w-5 h-5 flex items-center justify-center text-xl text-muted-500" icon="ph:sign-out-duotone"></iconify-icon>
             <span class="font-sans text-muted-800 dark:text-muted-500">
               Logout
             </span>

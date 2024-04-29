@@ -3,7 +3,6 @@ import { defineConfig } from 'vite'
 import { resolve } from 'path'
 import fastglob from 'fast-glob'
 import handlebars from 'vite-plugin-handlebars'
-import icons from 'vite-plugin-purge-icons'
 
 const rootPath = 'src/root'
 
@@ -54,13 +53,5 @@ export default defineConfig({
       ],
       reloadOnPartialChange: false,
     }),
-
-    /**
-     * vite-plugin-purge-icons plugin is responsible of autoloading icones from multiples providers
-     *
-     * @see https://icones.netlify.app/
-     * @see https://github.com/antfu/purge-icons/tree/main/packages/vite-plugin-purge-icons
-     */
-    icons(),
   ],
 })
