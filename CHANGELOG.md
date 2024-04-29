@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/cssninjaStudio/finity/compare/v1.1.0...v1.2.0) (2024-04-29)
+
+
+### Features
+
+* migrate to iconify-icon, update dependencies ([c8874b6](https://github.com/cssninjaStudio/finity/commit/c8874b641af75fb5b8582b18af0fbfa7631e6028))
+
 ## [1.1.0](https://github.com/cssninjaStudio/finity/compare/v1.0.0...v1.1.0) (2023-02-10)
 
 
