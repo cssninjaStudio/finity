@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/cssninjaStudio/finity/compare/v1.2.1...v1.3.0) (2026-09-30)
+
+
+### ⚖️ License
+
+* relicense under MIT ([1dced48](https://github.com/cssninjaStudio/finity/commit/1dced48e529affbd8d33e4013e231c6f9458a79b))
+
 ### [1.2.1](https://github.com/cssninjaStudio/finity/compare/v1.2.0...v1.2.1) (2024-05-02)
 
 ## [1.2.0](https://github.com/cssninjaStudio/finity/compare/v1.1.0...v1.2.0) (2024-04-29)
